@@ -50,7 +50,7 @@ export function Home() {
           <InputAverage
             type="text"
             id="avaliativa"
-            placeholder="Digite a Nota At Avaliativa"
+            placeholder="ponto no lugar de virgula,Ex: 7.5"
             max={10}
             min={1}
             {...register('avaliativa', { valueAsNumber: true })}
@@ -58,9 +58,9 @@ export function Home() {
 
           <label htmlFor="presencial">Nota prova Presencial</label>
           <InputAverage
-            type="number"
+            type="text"
             id="presencial"
-            placeholder="Digite a Nota Prova Presencial"
+            placeholder="ponto no lugar de virgula,Ex: 7.5"
             max={10}
             min={1}
             {...register('presencial', { valueAsNumber: true })}

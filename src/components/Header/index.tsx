@@ -5,7 +5,10 @@ import { NavLink } from 'react-router-dom'
 export function Header() {
   return (
     <HeaderContainer>
-      <img src={logoUnivesp} alt="Logo da Univercidade Univesp" />
+      <img
+        src={logoUnivesp}
+        alt="Logo da Universidade Virtual do Estado de São Paulo, Univesp"
+      />
       <NavLinks>
         <NavLink to="/">
           <Calculator size={35} />
