@@ -12,13 +12,22 @@ export const HeaderContainer = styled.header`
 
 export const NavLinks = styled.nav`
   display: flex;
-  gap: 1rem;
-`
+  gap: 0.5rem;
 
-export const IconCalculator = styled.a`
-  color: ${(props) => props.theme['gray-100']};
-`
+  a {
+    width: 3rem;
+    height: 3rem;
 
-export const IconGitHub = styled.a`
-  color: ${(props) => props.theme['rose-600']};
+    display: flex;
+    justify-content: center;
+
+    color: ${(props) => props.theme['gray-100']};
+
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+      border-bottom: 2px solid ${(props) => props.theme['rose-600']};
+    }
+  }
 `

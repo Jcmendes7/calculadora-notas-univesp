@@ -1,18 +1,23 @@
 import { Calculator, GithubLogo } from 'phosphor-react'
 import logoUnivesp from '../../assets/logo-univesp.png'
-import { HeaderContainer, IconCalculator, IconGitHub, NavLinks } from './styles'
+import { HeaderContainer, NavLinks } from './styles'
+import { NavLink } from 'react-router-dom'
 export function Header() {
   return (
     <HeaderContainer>
       <img src={logoUnivesp} alt="Logo da Univercidade Univesp" />
       <NavLinks>
-        <IconCalculator href="/">
+        <NavLink to="/">
           <Calculator size={35} />
-        </IconCalculator>
-        <IconGitHub href="">
+        </NavLink>
+        <NavLink
+          to="https://github.com/Jcmendes7/calculadora-notas-univesp.git"
+          target="_blank"
+          rel="noreferrer"
+        >
           {' '}
           <GithubLogo size={35} />{' '}
-        </IconGitHub>
+        </NavLink>
       </NavLinks>
     </HeaderContainer>
   )
